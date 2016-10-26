@@ -24,7 +24,7 @@
 * display:none
 * position:absolute/fixed/sticky
 
-> 清除浮动带来的影响
+> 清除浮动所带来的影响
 
 * 方法1:在底部插入clear:both
 * 方法2:父元素BFC(IE8+)或者haslayout(IE6/IE7)
