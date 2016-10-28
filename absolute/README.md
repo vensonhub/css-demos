@@ -15,4 +15,13 @@
 * 绝对定位生效时，浮动一定是失效的；
 * absolute与位置跟随
 
+> z-index 无依赖
+* 如果只有一个绝对定位元素，自然不需要z-index，自动覆盖普通元素；
+* 如果两个绝对定位，控制DOM流的前后顺序达到要覆盖的效果，依然无z-index;
+* 如果多个绝对定位交错，非常少见，z-index控制：1就可以了；
+* 如果非弹窗类绝对元素定位,z-index>2,必定z-index冗余了；
 
+> 宽度高度可以与top/right/bottom/left互相代替
+width:100%,height:100%;
+等同
+top:0,right:0,bottom:0,left:0;
