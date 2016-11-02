@@ -41,7 +41,7 @@
 * text-align:justify任意数目列表的两端对齐效果：
 
 ```
-justify-fix{display:inline-block;widht:250px}
+.justify-fix{display:inline-block;widht:250px;line-height:0;/*加上这个可以做修正去掉空白*/vertical-align:top;/*去掉空白*/}
 
 p style="text-align:justify;"
 	img src="mm.png" widht="250px"
@@ -53,3 +53,11 @@ p style="text-align:justify;"
 	i class="justify-fix"
 	
 ```
+
+> vertical-align 与 line-height
+
+* inline-block的基线是正常流中最后一个line-box的基线，除非，这个line-box里面即没有line-box或者本身overflow属性的计算值而不是visible，这种情况下基线是margin底边缘
+* vertical-align:sub/super;
+* 小图标和文字对齐:img{vertical-align:-10px;}
+* 不定尺寸图片或多行文字的垂直居中：1.主题元素inline-block化；2.0宽度100%高度辅助元素；3.vertical－align:middle;
+
