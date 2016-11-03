@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>margin</title>
+    <style>
+        .box{overflow: hidden;resize: vertical;}
+        .child-orange,
+        .child-green{width: 600px;margin-bottom: -600px;padding-bottom: 600px;}
+        .child-orange{float: left;background-color: orange;}
+        .child-green{float: left;background-color: green;}
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="child-orange">1</div>
+    <div class="child-green">2</div>
+    <div class="child-orange">1</div>
+    <div class="child-green">2</div>
+    <div class="child-orange">1</div>
+</div>
+</body>
+</html>
