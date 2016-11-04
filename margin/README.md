@@ -66,3 +66,17 @@
 > margin 负值
 
 * margin负值下的两端对齐
+
+> margin 无效情况
+
+* inline元素的垂直是无效的，前提非替换元素，例如：不是img元素；正常书写模式；
+* margin重叠
+* display:table-cell与margin,应用于除了display:table相关类型（不包括table-cpation,table以及inline-table）的所有。甚至也可以应用::first-letter
+* position:absolute与margin，绝对定位元素非定位方向"无效"；
+
+> margin-start和margin-end
+
+* 正常的流向，margin-start等同于margin-left,两者重叠不累加;
+* 如果水平流是从右往左，margin-start等同于margin-right;
+* 在垂直流下(writing-mode:vertical-*;)等同于margin-top;
+* margin-collapse margin重叠可以用此属性，属性分别为-webkit-margin-collapse:collapse(默认－重叠)|discard(取消)|separate(分隔)
