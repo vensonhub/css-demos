@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>等高布局</title>
+    <style>
+        body{padding: 0;margin: 0;}
+        .container{
+            width: 600px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .left{
+            float: left;
+            width: 150px;
+            margin-bottom: -200px;
+            padding-bottom: 200px;
+            background-color: #0078b6;
+        }
+        .right{
+            float: left;
+            width: 450px;
+            margin-bottom: -200px;
+            padding-bottom: 200px;
+            background-color: #9abbc8;
+        }
+    </style>
+</head>
+<body>
+<div class="container fix">
+    <div class="left">我是left</div>
+    <div class="right">我是right <br> <br> <br> <br> <br>比left高了 </div>
+</div>
+<div class="container">下一个block</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>宽度自适应</title>
+    <style>
+        body,div{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            height: 200px;
+        }
+        .left{
+            float: left;
+            width: 100px;
+            background-color: #9abbc8;
+            _margin-right:-3px;
+        }
+        .right{
+            float: right;
+            width: 100px;
+            background-color: #2ea7e0;
+            _margin_left:-3px;/*为了兼容IE,IE 有3像素bug*/
+        }
+        .center{
+            background-color: #0078b6;
+            margin: 0 100px;
+            _margin:0 97px;/*为了兼容IE*/
+        }
+    </style>
+</head>
+<body>
+<div class="left">我是left</div>
+<div class="right">我是right</div>
+<div class="center">我是center</div>
+</body>
+</html>
