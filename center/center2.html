@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>float利用relative来居中</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 400px;
+            height: 300px;
+            border: 1px solid #9abbc8;
+            margin: 0 auto;
+        }
+        .wraper{
+            float: left;
+            position: relative;
+            left: 50%;
+            /*clear: both;*/
+        }
+        .child{
+            position: relative;
+            left: -50%;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="wraper">
+        <div class="child">我水平居中了</div>
+    </div>
+</div>
+</body>
+</html>
